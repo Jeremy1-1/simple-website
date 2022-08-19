@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+body{
+    font-family: 'Chelsea Market', cursive;
+    background: rgb(132, 217, 132);
+}
+
+::selection{
+    background: #956f90;
+}
+
+header{
+    display: flex;
+    color: silver;
+}
+
+h1{
+    margin-bottom: -60px;
+    margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2c451f;
+    color: silver;
+    font-size: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 590px;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: beige;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav ul li{
+    /* list-style: none; */
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+h2{
+    color: #2c451f;
+}
+
+label{
+    color: sienna;
+}

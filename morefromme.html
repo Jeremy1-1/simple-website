@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Games</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+            body{
+                font-family: 'Patrick Hand', cursive;
+                background: #f08080;
+            }
+
+            ::-webkit-scrollbar{
+                width: .5em;
+            }
+
+            ::-webkit-scrollbar-track{
+                /* background: hsl(230, 50%, 50%); */
+                margin-block: .5em;
+                border-radius: 100vw;
+            }
+
+            ::-webkit-scrollbar-thumb{
+                background: hsl(180, 30%, 25%);
+                border-radius: 100vw;
+            }
+
+            h1{
+                color: #141717;
+                font-size: 40px;
+            }
+
+            .navbar{
+                overflow: hidden;
+                background: lightgoldenrodyellow;
+            }
+
+            .navbar a{
+                float: left;
+                font-size: 25px;
+                color: lightcoral;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: 1s;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                cursor: pointer;
+                font-size: 25px;  
+                border: none;
+                outline: none;
+                color: lightcoral;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                transition: 1s all ease-in;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:hover {
+                background-color: lightsalmon;
+            }
+
+            .dropdown-content {
+                /* opacity: 0; */
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: #20b2aa;
+                padding: 12px 16px;
+                text-decoration: none;
+                text-align: left;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Biggest Transfers in Football Summer 2022</h1>
+        </header>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="morefromme.html">Games and more</a>
+            <div class="dropdown">
+            <button class="dropbtn"  onclick="myFunction()">Account
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
+            </div>
+            </div> 
+          </div>
+
+          <script src="main.js"></script>
+    </body>
+</html>
