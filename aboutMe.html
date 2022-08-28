@@ -3,8 +3,13 @@
 
     <head>
         <title>About Me</title>
+        <script 
+        src="https://kit.fontawesome.com/98ab4b46c4.js" 
+        crossorigin="anonymous">
+        </script>  
 
         <style>
+            
             @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
             body{
@@ -95,19 +100,46 @@
             .show {
                 display: block;
             }
+
+            img{
+                display: flex;
+                margin: auto;
+                min-height: 50vh;
+                border-radius: 50%;
+                margin-top: 80px;
+                filter: contrast(10);
+                transition: 2s ease-in;
+                cursor: pointer;
+            }
+
+            img:hover{
+                border-radius: 80px;
+                color: beige;
+            }
+
+            .content{
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .info > p{
+                font-size: 30px;
+                text-align: center;
+            }
+
+
         </style>
     </head>
 
     <body>
 
         <header>
-            <h1>Biggest Transfers in Football Summer 2022</h1>
+            <h1>About Me</h1>
         </header>
 
         <div class="navbar">
             <a href="index.html">Home</a>
             <a href="aboutMe.html">About Me</a>
-            <a href="morefromme.html">Contact Me</a>
             <div class="dropdown">
             <button class="dropbtn"  onclick="myFunction()">Account
               <!-- <i class="fa fa-caret-down"></i> -->
@@ -119,7 +151,26 @@
             </div> 
           </div>
 
-          <img src="images/my team.jpg" alt="my team">
+
+        <img src="images/my team.jpg" alt="my team">
+
+        <div class="content">
+            <p><strong>Name:</strong>Jeremy Joshua .A.</p>
+            <p><strong>Email:</strong> blessedjosh234@gmail.com</p>
+            <p><strong>Contact:</strong> 09837473721</p>
+        </div>
+          
+        <div class="info">
+            <p>Jeremy is a 14-year old boy who
+                studies at Taibah International School Secondary
+                and loves playing football and programming. He supports
+                Manchester City in the Premier League and his favourite
+                player is Kevin de Bruyne.
+             </p>
+
+             <input type="date">
+        </div>
+        
 
           <script src="main.js"></script>
     </body>

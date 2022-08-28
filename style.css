@@ -104,7 +104,7 @@ h1{
 }
 
 #img1{
-    width: 400px;
+    width: 300px;
     height: 300px;
     border-radius: 90px;
     cursor: pointer;
@@ -132,4 +132,35 @@ h1{
 
 ol > p{
     font-size: 25px;
+}
+
+footer{
+    background: #123123;
+    font-size: 25px;
+    text-align: left;
+    /* margin: auto; */
+}
+
+footer > p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: red;
+    transition: .5s;
+}
+
+::selection{
+    /* color: blue; */
+    background: lightblue;
+}
+
+footer a:hover{
+    color: whitesmoke;
+    font-size: 27px;
+}
+
+footer > i{
+    cursor: pointer;
 }
